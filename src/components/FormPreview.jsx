@@ -271,7 +271,7 @@ const FormPreview = () => {
       <Typography textAlign="center" variant="h6" p={2}>
         {currentPage.title} (Page {currentPageIndex + 1} of {form.pages.length})
       </Typography>
-      <Paper elevation={3} style={{ padding: "20px", marginBottom: "20px" }}>
+      <Box style={{ marginBottom: "20px" }}>
         <Typography variant="h6" gutterBottom>
           {currentPage.title}
         </Typography>
@@ -285,7 +285,7 @@ const FormPreview = () => {
             {renderQuestion(question)}
           </Box>
         ))}
-      </Paper>
+      </Box>
 
       {currentPageIndex === form.pages.length - 1 && (
         <Box display="flex" justifyContent="end">

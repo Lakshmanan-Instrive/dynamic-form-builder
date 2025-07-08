@@ -369,7 +369,7 @@ const DynamicFormGenerator = () => {
           {currentPage.title} (Page {currentPageIndex + 1} of {form.pages.length})
         </Typography>
 
-        <Paper elevation={3} style={{ padding: "20px", marginBottom: "20px" }}>
+        <Box style={{  marginBottom: "20px" }}>
           <Box display="flex" justifyContent="space-between" alignItems="center" mb={2}>
             <Typography variant="h6">{currentPage.title}</Typography>
             <Box>
@@ -482,7 +482,7 @@ const DynamicFormGenerator = () => {
               Next
             </Button>
           </Box>
-        </Paper>
+        </Box>
 
         <Dialog open={isQuestionDialogOpen} onClose={() => setIsQuestionDialogOpen(false)}>
           <DialogTitle>
